@@ -83,7 +83,8 @@ window.onload = function(){
                             "session":window.sess
                         }
                     }
-
+                    
+                    window.localStorage.event = JSON.stringify(message);
                     var event = document.createEvent("HTMLEvents");
                     event.initEvent("upload", true, true);
                     document.body.dispatchEvent(event)
