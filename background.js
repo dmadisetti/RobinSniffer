@@ -14,6 +14,7 @@ chrome.runtime.onMessage.addListener(
         if(request.type == 'set'){
             robin.push(request.data);
             window.localStorage.robin = JSON.stringify(robin);
+            download(request.data);
             console.log('Uploaded Baby!');
         } else if(request.type == 'get'){
             var response = {}

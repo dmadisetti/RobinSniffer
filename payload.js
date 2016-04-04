@@ -177,3 +177,7 @@ if ($("#joinRobinContainer").length) {
 window.onpopstate = function (event) {
     location.reload(true);
 }
+
+
+/* Hoot script */
+// var X=Math.random,O=(i)=>{x="";while(--i>0)x+=X()>.5?"o":"O";return x};setTimeout(()=>$('input').val("h"+O(X()*138)+"t").submit(),5000)
